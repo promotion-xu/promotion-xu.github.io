@@ -1,18 +1,25 @@
 import React from 'react';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  // Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import './App.scss';
+import Sidebar from "./components/Sidebar"
+import Header from "./components/Header"
+import { R } from './router'
 
 
 
 function App() {
   return (
-    <div className="App">
-      111
+    <div className="app">
+      <div className="left">
+        <div className="sidebar"><Sidebar /></div>
+      </div>
+      <div className="right">
+        <div className="header"><Header /></div>
+        <main>
+          <R />
+        </main>
+      </div>
+      
+      
     </div>
   );
 }
