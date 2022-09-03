@@ -2,7 +2,6 @@ import React, { Suspense } from 'react';
 import {
   Route,
   Routes,
-  BrowserRouter
 } from "react-router-dom";
 import Github from '../pages/github';
 import Home from "../pages/Home"
@@ -28,6 +27,7 @@ export const R = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>
+      <Route path="home" element={<Home />}></Route>
       <Route path="js-practice" element={<JsPractice />} />
         <Route path="github" element={<Github />} />
         <Route

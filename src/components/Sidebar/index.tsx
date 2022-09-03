@@ -2,7 +2,7 @@ import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/ico
 import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 
 
@@ -55,8 +55,10 @@ const items: MenuProps['items'] = [
 ];
 
 const Sidebar: React.FC = (props) => {
+  const navigate = useNavigate()
   const onClick: MenuProps['onClick'] = e => {
     console.log('click ', e.key);
+    navigate(e.key)
     console.log('click ', props);
   };
 
