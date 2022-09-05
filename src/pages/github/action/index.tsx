@@ -3,7 +3,7 @@ import "./index.scss";
 const Github = () => {
   return (
     <div className="github-action">
-      <h1>是用Github Action 持续构建发布你的应用 </h1>
+      <h1>使用Github Action 持续构建发布你的应用 </h1>
       <h2>前言</h2>
       <p>
         我记得刚工作时，部署项目方式，就是：
