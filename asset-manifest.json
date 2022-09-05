@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d5daed3.css",
-    "main.js": "/static/js/main.8f5e9903.js",
-    "static/js/787.f8a0dea2.chunk.js": "/static/js/787.f8a0dea2.chunk.js",
-    "index.html": "/index.html",
-    "main.6d5daed3.css.map": "/static/css/main.6d5daed3.css.map",
-    "main.8f5e9903.js.map": "/static/js/main.8f5e9903.js.map",
-    "787.f8a0dea2.chunk.js.map": "/static/js/787.f8a0dea2.chunk.js.map"
+    "main.css": "/promotion-xu.github.io/static/css/main.6d5daed3.css",
+    "main.js": "/promotion-xu.github.io/static/js/main.0b56ae49.js",
+    "static/js/787.f8a0dea2.chunk.js": "/promotion-xu.github.io/static/js/787.f8a0dea2.chunk.js",
+    "index.html": "/promotion-xu.github.io/index.html",
+    "main.6d5daed3.css.map": "/promotion-xu.github.io/static/css/main.6d5daed3.css.map",
+    "main.0b56ae49.js.map": "/promotion-xu.github.io/static/js/main.0b56ae49.js.map",
+    "787.f8a0dea2.chunk.js.map": "/promotion-xu.github.io/static/js/787.f8a0dea2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6d5daed3.css",
-    "static/js/main.8f5e9903.js"
+    "static/js/main.0b56ae49.js"
   ]
 }
