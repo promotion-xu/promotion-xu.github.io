@@ -4,7 +4,9 @@
 
 dev: for development
 
-master: for building website
+master: for stable code
+
+gh-pages: for building website
 
 ## Code style
 
