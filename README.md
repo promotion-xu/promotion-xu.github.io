@@ -30,6 +30,7 @@ examples:
 - :rocket: feat: completed xxx feature
 - :bug: fix: xxx bug
 - :perf: optimized: xxx performance
+- :memo: xxx document
 
 ### todo list
 
