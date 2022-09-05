@@ -1,0 +1,65 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/bazel-out/**": true,
+    "**/*.map": true,
+    "**/*.d.ts.map": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/dist": true
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["/lerna.json"],
+      "url": "http://json.schemastore.org/lerna"
+    },
+    {
+      "fileMatch": ["**/project.json"],
+      "url": "./web/libs/poka/src/configCreater/schema.json"
+    }
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "npm.packageManager": "yarn",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "typescript",
+    "typescriptreact"
+  ],
+  "git.ignoredRepositories": [
+    "bazel-out"
+  ],
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "editor.formatOnSave": true,
+  "[yaml]": {
+    "editor.formatOnSave": false
+  }
+}
