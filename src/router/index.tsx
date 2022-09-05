@@ -1,27 +1,19 @@
-import React, { Suspense } from 'react';
-import {
-  Route,
-  Routes,
-} from "react-router-dom";
-import Github from '../pages/github';
-import Home from "../pages/Home"
-import JsPractice from '../pages/js-practice';
-
+import React, { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "../pages/Home";
+import JsPractice from "../pages/js-practice";
+import GithubAction from "../pages/github/action";
 
 const routes = [
   {
-    path: '/',
+    path: "/",
     element: Home,
   },
   {
-    path: 'js-practice',
-    element: JsPractice
+    path: "js-practice",
+    element: JsPractice,
   },
-  {
-    path: 'github',
-    element: Github
-  }
-]
+];
 
 export const R = () => {
   return (
@@ -29,15 +21,17 @@ export const R = () => {
       <Route path="/" element={<Home />}></Route>
       <Route path="home" element={<Home />}></Route>
       <Route path="js-practice" element={<JsPractice />} />
-        <Route path="github" element={<Github />} />
-        <Route
-          path="*"
-          element={
-            <main style={{ padding: "1rem" }}>
-              <p>There's nothing here!</p>
-            </main>
-          }
-        />
+      <Route path="github">
+        <Route path="action" element={<GithubAction />} />
+      </Route>
+      <Route
+        path="*"
+        element={
+          <main style={{ padding: "1rem" }}>
+            <p>There's nothing here!</p>
+          </main>
+        }
+      />
     </Routes>
-  )
-}
+  );
+};
