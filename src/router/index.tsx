@@ -1,19 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import JsPractice from "../pages/js-practice";
 import GithubAction from "../pages/github/action";
-
-const routes = [
-  {
-    path: "/",
-    element: Home,
-  },
-  {
-    path: "js-practice",
-    element: JsPractice,
-  },
-];
 
 export const R = () => {
   return (
