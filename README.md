@@ -55,5 +55,7 @@ examples:
 二、2022-09-06
 
 ✅ [100%] github action
+
 🟡 [01%] jest
+
 🟡 [100%] alias
