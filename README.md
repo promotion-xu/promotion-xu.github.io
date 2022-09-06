@@ -37,6 +37,8 @@ examples:
 1. auto deploy
 2. /lgtm
 3. github action
+4. jest
+5. alias
 
 ### update log
 
@@ -48,3 +50,10 @@ examples:
 ✅ [100%] auto deploy
 
 🟡 [30%] github action
+
+
+二、2022-09-06
+
+✅ [100%] github action
+🟡 [01%] jest
+🟡 [01%] alias
