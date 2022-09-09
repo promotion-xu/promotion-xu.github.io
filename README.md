@@ -1,6 +1,5 @@
 # 我的个人网站
 
-
 ## 技术栈 React + Typescript + antd
 
 ## Branch
@@ -54,11 +53,10 @@ examples:
 
 🟡 [30%] github action
 
-
 二、2022-09-06
 
 ✅ [100%] github action
 
-🟡 [01%] jest
+🟡 [100%] jest
 
 🟡 [100%] alias

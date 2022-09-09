@@ -9,7 +9,7 @@ test("two plus two is four", () => {
 });
 
 test("object assignment", () => {
-  const data = { one: 1 };
+  const data: any = { one: 1 };
   data["two"] = 2;
   expect(data).toEqual({ one: 1, two: 2 });
 });
