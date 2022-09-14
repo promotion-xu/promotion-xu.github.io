@@ -55,15 +55,15 @@ examples:
 
 ✅ [100%] auto deploy
 
-🟡 [30%] github action
+✅ [100%] github action
 
 二、2022-09-06
 
 ✅ [100%] github action
 
-🟡 [100%] jest
+✅ [100%] jest
 
-🟡 [100%] alias
+✅ [100%] alias
 
 三、2022-09-13
 
