@@ -36,14 +36,15 @@ examples:
 
 ### todo list
 
-1. auto deploy
+1. auto deploy ✅
 2. /lgtm
-3. github action
-4. jest
-5. alias
+3. github action ✅
+4. jest ✅
+5. alias ✅
 6. react-redux
 7. mock
 8. error-01: https://github.com/promotion-xu/promotion-xu.github.io/actions/runs/3020475577/jobs/4857425216
+9. TDD
 
 ### update log
 
