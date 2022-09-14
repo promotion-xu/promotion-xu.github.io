@@ -4,9 +4,9 @@ import { Route, Routes } from "react-router-dom";
 // import JsPractice from "@/pages/js-practice";
 // import GithubAction from "@/pages/github/action";
 
-import Home from '../pages/home';
-import JsPractice from "../pages/js-practice";
-import GithubAction from '../pages/js-practice'
+import Home from '../pages/home/index';
+import JsPractice from "../pages/js-practice/index";
+import GithubAction from '../pages/js-practice/index'
 
 export const R = () => {
   return (
