@@ -45,6 +45,7 @@ examples:
 7. mock
 8. error-01: https://github.com/promotion-xu/promotion-xu.github.io/actions/runs/3020475577/jobs/4857425216
 9. TDD
+10. 国际化
 
 ### update log
 
@@ -68,5 +69,11 @@ examples:
 三、2022-09-13
 
 ✅ [100%] react-redux
+
 🟡 [01%] mock
+
 🟡 [01%] error-01
+
+四、2022-09-19
+
+🟡 [01%] 国际化
