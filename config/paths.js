@@ -7,10 +7,9 @@ const getPublicUrlOrPath = require('react-dev-utils/getPublicUrlOrPath');
 // Make sure any symlinks in the project folder are resolved:
 // https://github.com/facebook/create-react-app/issues/637
 const appDirectory = fs.realpathSync(process.cwd());
-console.log('---process.cwd', process.cwd())
-console.log('---appDirectory', appDirectory)
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 console.log('---resovel(src)', resolveApp('src'))
+
 // We use `PUBLIC_URL` environment variable or "homepage" field to infer
 // "public path" at which the app is served.
 // webpack needs to know it to put the right <script> hrefs into HTML even in
