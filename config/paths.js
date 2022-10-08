@@ -10,6 +10,11 @@ const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 console.log('---resovel(src)', resolveApp('src'))
 console.log('----__dirname', __dirname)
+
+fs.readdirSync(resolveApp('src'), { withFileTypes: true }).forEach(async function(dirent) {
+  const filePath = path.join(resolveApp('src'), dirent.name)
+  console.log('----filePath', filePath)
+})
 // We use `PUBLIC_URL` environment variable or "homepage" field to infer
 // "public path" at which the app is served.
 // webpack needs to know it to put the right <script> hrefs into HTML even in
