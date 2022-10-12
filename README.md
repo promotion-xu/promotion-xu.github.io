@@ -80,4 +80,4 @@ examples:
 
 五、2022-10-12
 
-🟡 [01%] publish path error
+🟡 [20%] publish path error

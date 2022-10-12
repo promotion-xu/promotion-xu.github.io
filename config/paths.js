@@ -8,8 +8,6 @@ const getPublicUrlOrPath = require('react-dev-utils/getPublicUrlOrPath');
 // https://github.com/facebook/create-react-app/issues/637
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
-console.log('---resovel(src)', resolveApp('src'))
-console.log('----__dirname', __dirname)
 
 fs.readdirSync(resolveApp('src'), { withFileTypes: true }).forEach(async function(dirent) {
   const filePath = path.join(resolveApp('src'), dirent.name)
