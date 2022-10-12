@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "antd/dist/antd.css";
 import { HashRouter } from "react-router-dom";
-import store from "@/store";
+import store from "./store";
 import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(
