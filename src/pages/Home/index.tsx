@@ -5,7 +5,7 @@ import { selectors } from '../../store/selectors'
 
 const Home = () => {
 
-  return <div>home</div>
+  return <div>Home</div>
 }
 
 
