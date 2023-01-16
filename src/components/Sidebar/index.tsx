@@ -7,6 +7,8 @@ import type { MenuProps } from "antd";
 import { Menu } from "antd";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { selectors } from "../../store/selectors";
+import { useDispatch, useSelector } from "react-redux";
 
 const items: MenuProps["items"] = [
   {
@@ -33,11 +35,18 @@ const items: MenuProps["items"] = [
 ];
 
 const Sidebar: React.FC = (props) => {
+  const theme = useSelector(selectors.theme);
+  const dispatch = useDispatch();
+
   const navigate = useNavigate();
   const onClick: MenuProps["onClick"] = (e) => {
     console.log("click ", e);
     const keyPath = e.keyPath;
     navigate(keyPath.reverse().join("/"));
+    dispatch({
+      type: "app/changeThemeReducer",
+      payload: theme === "dark" ? "light" : "dark",
+    });
   };
 
   return (
@@ -48,7 +57,7 @@ const Sidebar: React.FC = (props) => {
       defaultOpenKeys={["sub1"]}
       mode="inline"
       items={items}
-      theme="dark"
+      theme={theme}
     />
   );
 };
