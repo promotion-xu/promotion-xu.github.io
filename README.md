@@ -57,3 +57,11 @@ examples:
 ✅ [100%] github action
 🟡 [01%] jest
 🟡 [01%] alias
+
+
+三、2023-01-29
+
+✅ [100%] github action
+🟡 [01%] jest
+🟡 [01%] alias
+🟡 [01%] eslint + prettier
