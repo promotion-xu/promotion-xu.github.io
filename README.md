@@ -64,4 +64,4 @@ examples:
 ✅ [100%] github action
 🟡 [01%] jest
 🟡 [01%] alias
-🟡 [01%] eslint + prettier
+🟡 [40%] eslint + prettier
