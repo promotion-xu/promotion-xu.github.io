@@ -10,7 +10,15 @@ export const statusMap = (status: string) => {
     case 'success':
       return 'Successfully'
     case 'fail':
-      return 'fail'
+      return 'failed'
+    case 'warn':
+      return 'warning'
+    case 'danger':
+      return 'dangerous'
+    case 'info':
+      return 'information'
+    case 'text':
+      return 'texts'
     default:
       return status
   }
