@@ -1,10 +1,17 @@
 
 
-
-const calc = (data, list) => {
-  console.log(data, list)
+export const sum = (a: number, b: number) => {
+  return a + b
 }
 
-export const getList = (data, list) => {
-  return calc(data, list)
+
+export const statusMap = (status: string) => {
+  switch(status) {
+    case 'success':
+      return 'Successfully'
+    case 'fail':
+      return 'fail'
+    default:
+      return status
+  }
 }
