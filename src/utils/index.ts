@@ -26,5 +26,5 @@ export const statusMap = (status: string) => {
 
 
 export const fetchList = () => {
-  return fetch(`/api/user/list/logs`)
+  return fetch(`/api/user/list/messages`)
 }
