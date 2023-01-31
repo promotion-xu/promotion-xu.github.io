@@ -6,6 +6,7 @@ const JsPractice = () => {
 
   const [activeKey, setActiveKey] = useState('1')
 
+
   return <div>
      <Tabs activeKey={activeKey}>
       <Tabs.TabPane tab="Tab 1" key="1">

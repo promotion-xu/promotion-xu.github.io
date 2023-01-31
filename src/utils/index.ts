@@ -23,3 +23,8 @@ export const statusMap = (status: string) => {
       return status
   }
 }
+
+
+export const fetchList = () => {
+  return fetch(`/api/user/list/logs`)
+}
