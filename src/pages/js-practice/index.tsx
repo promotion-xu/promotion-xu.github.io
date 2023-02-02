@@ -6,6 +6,10 @@ const JsPractice = () => {
 
   const [activeKey, setActiveKey] = useState('1')
 
+  const fetchList = async () => {
+    const res = await getDataList()
+  }
+
 
   return <div>
      <Tabs activeKey={activeKey}>
