@@ -15,7 +15,8 @@ export const statusMap = {
 	}
 }
 
-type IStatus = "init" | "processing" | "completed"
+// type IStatus = "init" | "processing" | "completed"
+type IStatus = keyof typeof statusMap
 
 export interface IInfo {
   name: string;
