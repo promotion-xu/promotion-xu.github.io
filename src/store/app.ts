@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 interface IAppStoreState {
-  theme: "dark" | "light";
+  theme: "light" | "dark";
 }
 
 const initialState: IAppStoreState = {
