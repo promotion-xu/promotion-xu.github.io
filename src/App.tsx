@@ -1,8 +1,8 @@
-import React from "react";
-import "./App.scss";
-import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
-import { R } from "./router";
+import React from 'react'
+import './App.scss'
+import Sidebar from './components/Sidebar'
+import Header from './components/Header'
+import { R } from './router'
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         </main>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

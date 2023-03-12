@@ -1,27 +1,27 @@
-import React, { useMemo } from "react";
-import { useLocation } from "react-router-dom";
-import { HomeOutlined } from "@ant-design/icons";
-import { PageHeader, Breadcrumb } from "antd";
-import "./index.scss";
+import React, { useMemo } from 'react'
+import { useLocation } from 'react-router-dom'
+import { HomeOutlined } from '@ant-design/icons'
+import { PageHeader, Breadcrumb } from 'antd'
+import './index.scss'
 
 const Header: React.FC = () => {
-  const location = useLocation();
+  const location = useLocation()
 
   const breadcrumbMemo = useMemo(() => {
-    const pathname = location.pathname;
-    const routes = pathname.slice(1).split("/");
+    const pathname = location.pathname
+    const routes = pathname.slice(1).split('/')
 
     return (
-      <Breadcrumb style={{ paddingLeft: "24px" }}>
+      <Breadcrumb style={{ paddingLeft: '24px' }}>
         <Breadcrumb.Item>
           <HomeOutlined />
         </Breadcrumb.Item>
         {routes.map((route) => (
-          <Breadcrumb.Item>{route}</Breadcrumb.Item>
+          <Breadcrumb.Item key={route}>{route}</Breadcrumb.Item>
         ))}
       </Breadcrumb>
-    );
-  }, [location.pathname]);
+    )
+  }, [location.pathname])
 
   return (
     <div className="page-header">
@@ -46,7 +46,7 @@ const Header: React.FC = () => {
       />
       {breadcrumbMemo}
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

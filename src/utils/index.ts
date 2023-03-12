@@ -1,18 +1,18 @@
 
 
 export const statusMap = {
-	init: {
-		id: "start",
-		status: "default"
-	},
-	processing: {
-		id: "process",
-		status: "warning"
-	},
-	completed: {
-		id: "completed",
-		status: "success"
-	}
+  init: {
+    id: 'start',
+    status: 'default'
+  },
+  processing: {
+    id: 'process',
+    status: 'warning'
+  },
+  completed: {
+    id: 'completed',
+    status: 'success'
+  }
 }
 
 // type IStatus = "init" | "processing" | "completed"

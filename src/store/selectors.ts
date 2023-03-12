@@ -1,5 +1,5 @@
-import * as rawSelectors from "./_selectors";
-import store from ".";
+import * as rawSelectors from './_selectors'
+import store from '.'
 
 type RawSelectors = typeof rawSelectors;
 type Selectors = {
@@ -9,7 +9,7 @@ type Selectors = {
 };
 
 export const selectors = Object.keys(rawSelectors).reduce((acc, key) => {
-  const selector = (rawSelectors as any)[key];
-  acc[key] = (...args: any[]) => selector(store.getState(), ...args);
-  return acc;
-}, {} as any) as Selectors;
+  const selector = (rawSelectors as any)[key]
+  acc[key] = (...args: any[]) => selector(store.getState(), ...args)
+  return acc
+}, {} as any) as Selectors

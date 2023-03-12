@@ -1,5 +1,5 @@
-import React from "react";
-import "./index.scss";
+import React from 'react'
+import './index.scss'
 const Github = () => {
   return (
     <div className="github-action">
@@ -26,7 +26,7 @@ const Github = () => {
         https://juejin.cn/post/7139852230118604830
       </a>
     </div>
-  );
-};
+  )
+}
 
-export default Github;
+export default Github

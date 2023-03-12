@@ -1,5 +1,5 @@
-import type { IState } from ".";
+import type { IState } from '.'
 
 export function theme(state: IState) {
-  return state.appStoreReducer.theme;
+  return state.appStoreReducer.theme
 }

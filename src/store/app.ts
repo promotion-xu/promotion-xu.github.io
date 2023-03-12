@@ -1,21 +1,21 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
 interface IAppStoreState {
-  theme: "light" | "dark";
+  theme: 'light' | 'dark';
 }
 
 const initialState: IAppStoreState = {
-  theme: "dark",
-};
+  theme: 'dark',
+}
 
 export const appStore = createSlice({
-  name: "app",
+  name: 'app',
   initialState,
   reducers: {
     changeThemeReducer: (state, action) => {
-      state.theme = action.payload;
+      state.theme = action.payload
     },
   },
-});
+})
 
-export const appStoreReducer = appStore.reducer;
+export const appStoreReducer = appStore.reducer
