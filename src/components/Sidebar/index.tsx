@@ -20,6 +20,12 @@ const items: MenuProps['items'] = [
     label: 'Js Practice',
     key: 'js-practice',
     icon: <AppstoreOutlined />,
+    children: [
+      {
+        label: 'Word Scroll',
+        key: 'word-scroll'
+      }
+    ]
   },
   {
     label: 'github',

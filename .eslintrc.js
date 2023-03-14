@@ -35,6 +35,7 @@ module.exports = {
     'semi': [
       'error',
       'never'
-    ]
+    ],
+    'react/no-unescaped-entities': ['off', {'forbid': ['>', '}']}],
   }
 }
