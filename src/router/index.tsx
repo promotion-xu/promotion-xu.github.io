@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/home'
 import WordScroll from '../pages/js-practice/word-scroll'
 import GithubAction from '../pages/github/action'
+import Accordion from '../pages/js-practice/accordion'
 
 export const R = () => {
   return (
@@ -11,6 +12,7 @@ export const R = () => {
       <Route path="home" element={<Home />}></Route>
       <Route path="js-practice">
         <Route path="word-scroll" element={<WordScroll />}></Route>
+        <Route path="accordion" element={<Accordion />}></Route>
       </Route>
       <Route path="github">
         <Route path="action" element={<GithubAction />} />

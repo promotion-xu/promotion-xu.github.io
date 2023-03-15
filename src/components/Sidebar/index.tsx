@@ -24,6 +24,10 @@ const items: MenuProps['items'] = [
       {
         label: 'Word Scroll',
         key: 'word-scroll'
+      },
+      {
+        label: 'accordion',
+        key: 'accordion'
       }
     ]
   },
