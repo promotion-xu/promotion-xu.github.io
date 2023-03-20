@@ -22,7 +22,7 @@ export interface IInfo {
   status: IStatus;
 }
 
-export function transformI18KeyMap(map, parentKey, record) {
+export function transformI18KeyMap(map, parentKey = "", record = {}) {
 	for (const [key, value] of Object.entries(map)) {
 		const targetKey = parentKey ? `${parentKey}.${key}` : key
 		if (typeof value === "object") {
@@ -30,6 +30,6 @@ export function transformI18KeyMap(map, parentKey, record) {
 			continue
 		}
 		record[targetKey] = value
-		return record
 	}
+	return record
 }
