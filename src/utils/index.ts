@@ -26,7 +26,7 @@ export function transformI18KeyMap(map, parentKey = "", record = {}) {
 	for (const [key, value] of Object.entries(map)) {
 		const targetKey = parentKey ? `${parentKey}.${key}` : key
 		if (typeof value === "object") {
-			transformI18KeyMap(value, targetKey, record)
+			transformI18KeyMap(value, parentKey, record)
 			continue
 		}
 		record[targetKey] = value
